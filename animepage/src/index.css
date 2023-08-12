@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color:#313131; 
+    text-decoration: none;
+    overflow-x: hidden;
+}
+.body{
+    background-color: #313131;
+}
+.header{
+    text-align: center;
+    padding: 2rem;
+    background-color: #272727;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.header h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    background-color: #272727;
+    font-size: 3rem;
+}
+
+
+.animeCard{
+    width: 15%;
+    height: 300px;
+    overflow-y: hidden;
+    padding: 20px;
+    margin-top: 2rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    background-color: #313131;
+}
+.btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    padding: 1rem;
+}
+.btnDiv button{
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    background-color: #313131;
+}
+.infoContent{
+    width: 75%;
+    border-radius: 1rem;
+    padding: 20px;
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    background-color: #313131; 
+    
+}
+.animeCard:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.main img{
+    border-radius: 1rem;
+}
+.infos{
+    width: 65%;
+    height: 100%;
+    background-color: #313131;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.infos h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+}
+.infos p{
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+.infoscore{
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.infoscore span{
+    color: yellow;
+    margin-top: 1rem;
+}
+@media only screen and (max-width: 960px) {
+    .animeCard{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@media only screen and (max-width: 1400px) {
+    .animeCard{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .animeCard{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .animeCard{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+}
+@media only screen and (max-width: 1200px) {
+    .main{
+        height: 100%;
+        width: 100vw;
+    }
+    .infos{
+        width: 100%;
+    }
+    .infoContent{
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #313131;
+    }
+}@media only screen and (min-width: 1200px){
+    .infos{
+        height: 100%;
+    }
+    .infoContent{
+        gap: 2rem;
+    }
+}
